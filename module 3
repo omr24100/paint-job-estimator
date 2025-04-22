@@ -1,0 +1,19 @@
+#ifndef PAINT_JOB_H
+#define PAINT_JOB_H
+
+// Constants
+const double COVERAGE_PER_GALLON = 110.0;
+const double HOURS_PER_GALLON = 8.0;
+const double LABOR_RATE = 25.0;
+
+// Function Prototypes
+int getNumberOfRooms();
+double getPaintPrice();
+double getRoomSquareFeet(int roomNumber);
+int calculateGallons(double totalSquareFeet);
+double calculateLaborHours(int gallons);
+double calculatePaintCost(int gallons, double paintPrice);
+double calculateLaborCost(double hours);
+void displayResults(int gallons, double laborHours, double paintCost, double laborCost, double totalCost);
+
+#endif
